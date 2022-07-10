@@ -26,14 +26,14 @@ def loop_circle():
     plt.show()
     if y[-1] > 0:
         os.system('cls')
-        print(f"You won {y[-1]*stake} PaproCoin in {x[-1]} Spins!\nStake: {stake}")
+        print(f"You won {y[-1]*stake} Coins in {x[-1]} Spins!\nStake: {stake}")
     if y[-1] < 0:
         os.system('cls')
-        print(f"You lost {y[-1]*stake} PaproCoin in {x[-1]} Spins!\nStake: {stake}")
+        print(f"You lost {y[-1]*stake} Coins in {x[-1]} Spins!\nStake: {stake}")
     if y[-1] == 0:
         os.system('cls')
-        print(f"You are +/- PaproCoins in {x[-1]} Spins!\nStake: {stake}")
-    print("\n\nPress Enter to continue\n")
-    input("---")
+        print(f"You are +/- Coins in {x[-1]} Spins!\nStake: {stake}")
+    print("\n\nPress Enter to restart\n")
+    input("--- ")
     loop_circle()
 loop_circle()
