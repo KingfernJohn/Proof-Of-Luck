@@ -19,7 +19,7 @@ def loop_circle():
         else:
             y.append(y[-1]+1)
         x.append(i+1)
-    plt.title(f"Seed: {random.randint(100000000,1000000000000)}")
+    plt.title(f"Seed: {random.randint(1000000000000000000,10000000000000000000000000)}")
     plt.xlabel("Spins / Time")
     plt.ylabel("Win / Loss")
     plt.plot(x, y)
